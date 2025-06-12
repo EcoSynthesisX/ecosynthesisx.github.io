@@ -444,7 +444,7 @@ export default function Home() {
               ,
               {
                 name: "Eco Thailand Foundation",
-                logo: "https://avatars.githubusercontent.com/u/145981044?s=200&v=4",
+                logo: "EcoThailandLogo.png",
                 description: "A decentralized platform for organizing and rewarding real-world environmental cleanups.",
                 links: {
                   // twitter: "https://twitter.com/decleanup",
@@ -469,7 +469,7 @@ export default function Home() {
               }
             ].map((project) => (
               <div key={project.name} className="bg-black/70 rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 flex flex-col items-center text-center animate-fade-in transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_32px_0_rgba(0,255,255,0.25)] hover:border-teal-400 focus-within:scale-105 focus-within:shadow-[0_8px_32px_0_rgba(0,255,255,0.25)] focus-within:border-teal-400 cursor-pointer">
-                <Image src={project.logo} alt={project.name + ' Logo'} width={96} height={96} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 border-4 border-teal-400 shadow-lg bg-white object-cover" />
+                <Image src={project.logo} alt={project.name + ' Logo'} width={96} height={96} className="w-20 h-18 sm:w-30 sm:h-34 rounded-e mb-4 bg-white object-cover" />
                 <h3 className="text-xl sm:text-2xl font-bold mb-2">{project.name}</h3>
                 <p className="mb-4 text-sm sm:text-base text-white/90 px-2">{project.description}</p>
                 {project.workDone && (
