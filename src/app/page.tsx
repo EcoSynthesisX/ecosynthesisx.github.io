@@ -634,12 +634,12 @@ export default function Home() {
             </div> */}
             <div className="relative z-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 p-4 sm:p-6 md:p-8">
               {[
-                { name: 'Octant', logo: 'https://regenbazaar.com/cgi/image/1__zSXRYZ491Lw2ksRrhapl.svg?width=256&quality=80&format=auto', url: 'https://octant.app/' },
-                { name: 'Celo Public Good', logo: 'https://regenbazaar.com/cgi/image/2_fNiHrhi58AKiXFSdmpyXu.svg?width=128&quality=80&format=auto', url: 'https://celo.org/' },
-                { name: 'Gitcoin QF', logo: 'https://regenbazaar.com/cgi/image/3_ejPKxCMoXuyAm96DKfXhN.svg?width=128&quality=80&format=auto', url: 'https://gitcoin.co/' },
-                { name: 'Giveth QF', logo: 'https://regenbazaar.com/cgi/image/4_rAW6Qgy70O-wa_bzDVQbY.svg?width=128&quality=80&format=auto', url: 'https://giveth.io/' },
-                { name: 'Meta Pool DAO', logo: 'https://regenbazaar.com/cgi/image/5_BayeddYPBV5dmL86QApTJ.svg?width=256&quality=80&format=auto', url: 'https://metapool.app/' },
-                { name: 'Arbitrum DAO', logo: 'https://regenbazaar.com/cgi/image/6_U5R0QMAxOAhId3IqEs-DV.svg?width=128&quality=80&format=auto', url: 'https://arbitrum.foundation/' },
+                { name: 'Octant', logo: '/images/octant.svg', url: 'https://octant.app/' },
+                { name: 'Celo Public Good', logo: '/images/celo.svg', url: 'https://celo.org/' },
+                { name: 'Gitcoin QF', logo: '/images/gitcoin.svg', url: 'https://gitcoin.co/' },
+                { name: 'Giveth QF', logo: '/images/giveth.svg', url: 'https://giveth.io/' },
+                { name: 'Meta Pool DAO', logo: '/images/meta.svg', url: 'https://metapool.app/' },
+                { name: 'Arbitrum DAO', logo: '/images/arbitrum.svg', url: 'https://arbitrum.foundation/' },
               ].map((backer) => (
                 <a key={backer.name} href={backer.url} target="_blank" rel="noopener noreferrer" className="bg-[#5a82a2] rounded-xl p-3 sm:p-4 md:p-6 flex flex-col items-center justify-center shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-teal-400 touch-manipulation">
                   <Image src={backer.logo} alt={backer.name + ' logo'} width={48} height={48} className="mb-2 sm:mb-4 w-12 h-12 sm:w-16 sm:h-16" />
