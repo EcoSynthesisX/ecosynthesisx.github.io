@@ -117,6 +117,12 @@ export default function Home() {
         <p className="mb-6 text-lg sm:text-xl md:text-2xl font-medium leading-relaxed px-2">
           Bridging the gap between cutting-edge blockchain tech and everyday people, so everyone can contribute to a regenerative future.
         </p>
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">Read Our Story</h3>
+        <p className="mb-6 text-lg sm:text-xl md:text-2xl font-medium leading-relaxed px-2">
+          <Link href="https://mirror.xyz/paulburg.eth/T4XrZHgyiGki-DRuIGc_lf31J8XMpJPbl1JyCCc2S14" target="_blank" rel="noopener noreferrer" className="text-teal-300 hover:text-teal-400 underline">
+          EcoSynthesisX: From Crisis to Innovation
+          </Link>
+        </p>
 
       </section>
 
@@ -248,7 +254,7 @@ export default function Home() {
                 logo: "https://avatars.githubusercontent.com/u/170521953?s=200&v=4",
                 description: "A decentralized platform for organizing and tokenizing cleanups. Version 2 is in progress. ",
                 links: {
-                  landingPage: "https://decleanup.net/",
+                  website: "https://decleanup.net/",
                   twitter: "https://x.com/DeCleanupNet",
                   telegram: "https://t.me/DecentralizedCleanup",
                   github: "https://github.com/DeCleanup-Network"
@@ -258,14 +264,15 @@ export default function Home() {
                 name: "Regen Bazaar",
                 logo: "https://avatars.githubusercontent.com/u/196631779?s=96&v=4",
                 preview: "/images/regen-bazaar.png",
-                description: "A platform for nonprofits to apply for RWI tokenization and for buyers to find tokenized RWI they want to purchased.",
+                description: "A decentralized platform for:\n1. Nonprofits to tokenize RWI and sell impact product.\n 2. Retail users to find impact products, purchase them & utilize DeFi tools\nVersion 1 is in progress.",
                 links: {
-                  landingPage: "https://regenbazaar.com/",
-                  demo: "https://demo.regenbazaar.com/",
+                  website: "https://regenbazaar.com/",
+                  // demo: "https://demo.regenbazaar.com/",
                   twitter: "https://x.com/RegenBazaar",
-                  presentation: "https://www.canva.com/design/DAGXq0haF_Y/4_8NIQ5niLD_saONKTuYig/view",
-                  karma: "https://gap.karmahq.xyz/project/t.me/regen_bazaar",
-                  github: "https://github.com/regen-bazaar"
+                  // presentation: "https://www.canva.com/design/DAGXq0haF_Y/4_8NIQ5niLD_saONKTuYig/view",
+                  // karma: "https://gap.karmahq.xyz/project/t.me/regen_bazaar",
+                  github: "https://github.com/regen-bazaar",
+                  telegram: "https://t.me/regen_bazaar",
                 }
               },
             ].map((project) => (
@@ -298,7 +305,7 @@ export default function Home() {
                     },
                     {
                       key: 'twitter',
-                      icon: <svg width="20" height="20" className="sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557a9.93 9.93 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 0 0-8.384 4.482C7.691 8.095 4.066 6.13 1.64 3.161c-.542.929-.856 2.01-.857 3.17 0 2.188 1.115 4.117 2.823 5.254a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417A9.867 9.867 0 0 1 0 21.543a13.94 13.94 0 0 0 7.548 2.209c9.058 0 14.009-7.496 14.009-13.986 0-.21 0-.423-.016-.634A9.936 9.936 0 0 0 24 4.557z"/></svg>,
+                      icon: <svg width="20" height="20" className="sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>,
                       ariaLabel: 'X / Twitter',
                     },
                     {
@@ -454,17 +461,11 @@ export default function Home() {
                 },
                 preview:"/images/ecoThailand.png",
                 workDone: [
-                  "5+ gardens established",
-                  "3+ workshops",
-                  "5 sites zoned",
-                  "5 trees identified",
-                  "1,000+ students engaged",
-                  "42 rai surveyed",
-                  "200 trees identified",
-                  "5+ eco programs",
-                  "2.5 tons of CO2 saved",
-                  "20+ entity engaged",
-                  "300+ entities participated"
+                  "5+ gardens established with 3+ workshops completed ",
+                  "5 sites zoned, 42 rai surveyed with 200 trees identified",
+                  "1,000+ students engaged in Sustainablity education",
+                  "20+ entity engaged with 5+ eco programs",
+                  "300+ entities participated in saving 2.5 tons of CO2 and 5+ tons of monthlu waste"
                 ]
               }
             ].map((project) => (
@@ -635,7 +636,7 @@ export default function Home() {
             <div className="relative z-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 p-4 sm:p-6 md:p-8">
               {[
                 { name: 'Octant', logo: '/images/octant.svg', url: 'https://octant.app/' },
-                { name: 'Celo Public Good', logo: '/images/celo.svg', url: 'https://celo.org/' },
+                { name: 'Celo Public Good', logo: '/images/celo.svg', url: 'https://www.celopg.eco/' },
                 { name: 'Gitcoin QF', logo: '/images/gitcoin.svg', url: 'https://gitcoin.co/' },
                 { name: 'Giveth QF', logo: '/images/giveth.svg', url: 'https://giveth.io/' },
                 { name: 'Meta Pool DAO', logo: '/images/meta.svg', url: 'https://metapool.app/' },
